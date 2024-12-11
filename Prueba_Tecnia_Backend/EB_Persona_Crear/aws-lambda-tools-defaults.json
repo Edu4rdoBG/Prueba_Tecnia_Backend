@@ -12,5 +12,6 @@
   "function-runtime": "dotnet8",
   "function-memory-size": 512,
   "function-timeout": 30,
-  "function-handler": "EB_Persona_Crear::EB_Persona_Crear.Function::FunctionHandler"
+  "function-handler": "EB_Persona_Crear::EB_Persona_Crear.Function::FunctionHandler",
+  "function-name": "EB_Persona_Crear"
 }
