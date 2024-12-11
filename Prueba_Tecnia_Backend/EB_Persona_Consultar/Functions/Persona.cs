@@ -31,7 +31,7 @@ namespace EB_Persona_Consultar.Functions
             if (!DataProvider.Execute_sp_select_eb_persona(input.Buscar, out mensaje, out personas))
             {
                 response.ErrorCode = 2;
-                response.ErrorMessage = "Error: No se logro establecer conexión a la base de datos.";
+                response.ErrorMessage = $"Error: {mensaje}.";
                 return response;
             }
 
