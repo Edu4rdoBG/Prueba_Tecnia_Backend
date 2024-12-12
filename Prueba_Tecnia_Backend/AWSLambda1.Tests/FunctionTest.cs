@@ -29,10 +29,10 @@ public class FunctionTest : BaseCrudTests
         // Datos de conexión proporcionados para las pruebas
         TestData.Servidor = new TestData.Server()
         {
-            Host = "sb-paycashglobal.cekuahwifdlp.us-east-2.rds.amazonaws.com",
-            Schema = "paycash_middle_sb",
+            Host = "localhost",
+            Schema = "database",
             User = "admin",
-            Pass = "Int33rn44ti0na1321",
+            Pass = "123",
             Port = 3306
         };
         TestData.OutPut = _output;
