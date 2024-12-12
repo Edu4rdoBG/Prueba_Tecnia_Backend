@@ -10,7 +10,7 @@ namespace EB_Persona_Consultar.Functions.Data
     {
         public static string sqlConnString = string.Empty;
         static MySqlConnection connection = new MySqlConnection();
-        public static bool Execute_sp_select_eb_persona(string filtro, out string mensaje, out List<PersonaModel> lstPersona)
+        public static bool Execute_sp_select_eb_persona(out string mensaje, out List<PersonaModel> lstPersona)
         {
 
             lstPersona = new List<PersonaModel>();
@@ -19,18 +19,11 @@ namespace EB_Persona_Consultar.Functions.Data
                 if (connection.State == ConnectionState.Open)
                     connection.Close();
                 connection.Open();
-                string jsonFilter = "";
-                var objFilter = new
-                {
-                    Filtrar = filtro == string.Empty ? 0 : 1,
-                    Valor = filtro
-                };
-                jsonFilter = JsonSerializer.Serialize(objFilter);
                 LambdaLogger.Log(string.Concat("call sp_select_eb_persona()", DateTime.Now));
 
                 MySqlCommand cmd = new("sp_select_eb_persona", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("CkjFiltro", jsonFilter);
+                // cmd.Parameters.AddWithValue("CkjFiltro", jsonFilter);
 
                 MySqlDataAdapter ada = new(cmd);
                 DataTable dt = new();

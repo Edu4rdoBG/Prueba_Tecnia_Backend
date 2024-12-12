@@ -23,7 +23,7 @@ namespace EB_Persona_Consultar.Functions
             }
 
             var personas = new List<PersonaModel>();
-            if (!DataProvider.Execute_sp_select_eb_persona(input.Buscar, out mensaje, out personas))
+            if (!DataProvider.Execute_sp_select_eb_persona(out mensaje, out personas))
             {
                 response.ErrorCode = 2;
                 response.ErrorMessage = $"Error: {mensaje}.";
