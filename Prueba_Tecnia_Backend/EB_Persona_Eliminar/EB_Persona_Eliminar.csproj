@@ -13,8 +13,6 @@
   <ItemGroup>
     <PackageReference Include="Amazon.Lambda.Core" Version="2.5.0" />
     <PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="2.4.4" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Functions\Data\" />
+    <PackageReference Include="MySql.Data" Version="9.1.0" />
   </ItemGroup>
 </Project>
