@@ -1,6 +1,6 @@
 ﻿using Amazon.Lambda.Core;
-using EB_Persona_Eliminar.Functions.Data;
 using EB_Persona_Eliminar.Models;
+using EB_Persona_Eliminar.Functions.Data;
 
 namespace EB_Persona_Eliminar.Functions
 {
@@ -8,7 +8,7 @@ namespace EB_Persona_Eliminar.Functions
     {
         private ResponsePersona response = null;
         private string mensaje = "";
-        public ResponsePersona Update(RequestPersona input)
+        public ResponsePersona Delete(RequestPersona input)
         {
 
             LambdaLogger.Log("Inicia validación de los parametros");

@@ -1,13 +1,8 @@
-﻿using Amazon.Lambda.Core;
-using EB_Persona_Consultar.Models;
-using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
+﻿using System.Data;
 using System.Text.Json;
-using System.Threading.Tasks;
+using Amazon.Lambda.Core;
+using MySql.Data.MySqlClient;
+using EB_Persona_Consultar.Models;
 
 namespace EB_Persona_Consultar.Functions.Data
 {

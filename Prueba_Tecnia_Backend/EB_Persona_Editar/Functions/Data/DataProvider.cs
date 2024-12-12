@@ -1,13 +1,7 @@
-﻿using Amazon.Lambda.Core;
-using EB_Persona_Editar.Models;
+﻿using System.Data;
+using Amazon.Lambda.Core;
 using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+using EB_Persona_Editar.Models;
 
 namespace EB_Persona_Editar.Functions.Data
 {

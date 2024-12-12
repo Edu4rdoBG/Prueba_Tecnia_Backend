@@ -1,13 +1,7 @@
-﻿using Amazon.Lambda.Core;
-using EB_Persona_Eliminar.Models;
+﻿using System.Data;
+using Amazon.Lambda.Core;
 using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+using EB_Persona_Eliminar.Models;
 
 namespace EB_Persona_Eliminar.Functions.Data
 {
@@ -37,11 +31,17 @@ namespace EB_Persona_Eliminar.Functions.Data
                 {
                     int fila = int.Parse(dt.Rows[0]["nFila"].ToString()!);
 
-                    if (fila > 0)
+                    if (fila == 0)
                     {
                         mensaje = $"El registro fue eliminado con exito, fila afectada: {fila} {DateTime.Now}";
                         LambdaLogger.Log(mensaje);
                         return true;
+                    }
+                    else if(fila == -1)
+                    {
+                        mensaje = $"No se encontro registro con id {input.Id} {DateTime.Now}";
+                        LambdaLogger.Log(mensaje);
+                        return false;
                     }
                     else
                     {

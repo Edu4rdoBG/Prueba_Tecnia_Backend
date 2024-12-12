@@ -1,6 +1,6 @@
 ﻿using Amazon.Lambda.Core;
-using EB_Persona_Editar.Functions.Data;
 using EB_Persona_Editar.Models;
+using EB_Persona_Editar.Functions.Data;
 
 namespace EB_Persona_Editar.Functions
 {

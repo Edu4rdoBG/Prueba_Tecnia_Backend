@@ -1,11 +1,6 @@
 ﻿using Amazon.Lambda.Core;
-using EB_Persona_Consultar.Functions.Data;
 using EB_Persona_Consultar.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using EB_Persona_Consultar.Functions.Data;
 
 namespace EB_Persona_Consultar.Functions
 {

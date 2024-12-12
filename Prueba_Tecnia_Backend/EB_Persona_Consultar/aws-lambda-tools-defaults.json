@@ -12,6 +12,6 @@
   "function-runtime": "dotnet8",
   "function-memory-size": 512,
   "function-timeout": 30,
-  "function-handler": "EB_Persona_Consultar::EB_Persona_Consultar.Function::FunctionHandler",
+  "function-handler": "EB_Persona_Consultar::EB_Persona_Consultar.Function::Consulta",
   "function-name": "EB_Persona_Consulta"
 }

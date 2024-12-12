@@ -12,6 +12,6 @@
   "function-runtime": "dotnet8",
   "function-memory-size": 512,
   "function-timeout": 30,
-  "function-handler": "EB_Persona_Eliminar::EB_Persona_Eliminar.Function::FunctionHandler",
+  "function-handler": "EB_Persona_Eliminar::EB_Persona_Eliminar.Function::Eliminar",
   "function-name": "EB_Persona_Eliminar"
 }
