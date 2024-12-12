@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EB_Persona_Eliminar", "EB_P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EB_Persona_Editar", "EB_Persona_Editar\EB_Persona_Editar.csproj", "{3DDCF453-F1D5-44BF-B0C6-17AF966210AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EB_Persona_Test", "AWSLambda1.Tests\EB_Persona_Test.csproj", "{0FBA7379-4E38-44B4-8AD5-F08BCB77AB18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EB_Persona_Test", "EB_Persona_Test.Tests\EB_Persona_Test.csproj", "{0FBA7379-4E38-44B4-8AD5-F08BCB77AB18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
