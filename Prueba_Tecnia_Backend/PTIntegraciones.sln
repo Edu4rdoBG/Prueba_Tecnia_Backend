@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EB_Persona_Crear", "EB_Persona_Crear\EB_Persona_Crear.csproj", "{F6645436-75DF-4A8C-91F3-E883AB561D08}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EB_Persona_Eliminar", "EB_Persona_Eliminar\EB_Persona_Eliminar.csproj", "{845D7991-38C7-4E77-AD1A-B5ED956D8AE5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EB_Persona_Editar", "EB_Persona_Editar\EB_Persona_Editar.csproj", "{3DDCF453-F1D5-44BF-B0C6-17AF966210AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EB_Persona_Test", "EB_Persona_Test.Tests\EB_Persona_Test.csproj", "{0FBA7379-4E38-44B4-8AD5-F08BCB77AB18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3DDCF453-F1D5-44BF-B0C6-17AF966210AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DDCF453-F1D5-44BF-B0C6-17AF966210AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DDCF453-F1D5-44BF-B0C6-17AF966210AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FBA7379-4E38-44B4-8AD5-F08BCB77AB18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FBA7379-4E38-44B4-8AD5-F08BCB77AB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FBA7379-4E38-44B4-8AD5-F08BCB77AB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FBA7379-4E38-44B4-8AD5-F08BCB77AB18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

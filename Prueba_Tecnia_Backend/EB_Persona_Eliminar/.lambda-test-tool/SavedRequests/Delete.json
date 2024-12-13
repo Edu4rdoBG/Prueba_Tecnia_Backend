@@ -1,0 +1,8 @@
+{
+    "Id": 0,
+    "Host": "sb-paycashglobal.cekuahwifdlp.us-east-2.rds.amazonaws.com",
+    "Schema": "paycash_middle_sb",
+    "User": "admin",
+    "Pass": "Int33rn44ti0na1321",
+    "Port": 3306
+}
