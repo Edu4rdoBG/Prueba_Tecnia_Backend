@@ -25,7 +25,7 @@ El proyecto tiene la siguiente estructura:
 - **Script**: Contiene el script para la configuración de la base de datos **paycash_middle_sb**.
 - **Lambdas**: Contiene las funciones Lambda que realizan las operaciones CRUD:
   - **EB_Persona_Crear**: Función Lambda encargada de crear un nuevo registro de persona en la base de datos.
-  - **EB_Persona_Consultar**: Función Lambda encargada de consultar los detalles de una persona existente en la base de datos.
+  - **EB_Persona_Consultar**: Función Lambda encargada de consultar el listado de personas existente en la base de datos.
   - **EB_Persona_Editar**: Función Lambda encargada de actualizar los datos de una persona en la base de datos.
   - **EB_Persona_Eliminar**: Función Lambda encargada de eliminar un registro de persona de la base de datos.
 
@@ -48,12 +48,12 @@ Esto ejecutará las pruebas unitarias de xUnit y mostrará los resultados en la 
 
 La API tiene los siguientes métodos disponibles, gestionados por las funciones Lambda:
 
-- **GET**: Consulta los detalles de una persona en la base de datos.
+- **GET**: Consulta el listado de personas en la base de datos.
 - **POST**: Crea un nuevo registro de persona en la base de datos.
 - **PUT**: Actualiza los datos de una persona existente en la base de datos.
 - **DELETE**: Elimina un registro de persona en la base de datos.
 
-La ruta principal de la API es: https://2ngnoydav8.execute-api.us-east-2.amazonaws.com/sandbox/v1/eb
+La ruta principal de la API es: https://2ngnoydav8.execute-api.us-east-2.amazonaws.com/sandbox y su metodo es /v1/eb/persona
 Para detalles completos de los métodos y cómo interactuar con ellos, consulta la documentación de la API a través del siguiente enlace de **Swagger**:
 
 - [Swagger API Documentation](https://bucket-test-paycash.s3.us-east-2.amazonaws.com/swagger/EB/eb_index.html)
@@ -63,7 +63,7 @@ Para detalles completos de los métodos y cómo interactuar con ellos, consulta 
 El proyecto contiene las siguientes funciones Lambda que gestionan el CRUD de personas:
 
 1. **EB_Persona_Crear**: Esta Lambda se encarga de crear un nuevo registro de persona en la base de datos.
-2. **EB_Persona_Consultar**: Esta Lambda se encarga de consultar los detalles de una persona a partir de su identificador.
+2. **EB_Persona_Consultar**: Esta Lambda se encarga de consultar el lsitado de personas existente en la base de datos.
 3. **EB_Persona_Editar**: Esta Lambda se encarga de actualizar los datos de una persona existente en la base de datos.
 4. **EB_Persona_Eliminar**: Esta Lambda se encarga de eliminar un registro de persona de la base de datos.
 
